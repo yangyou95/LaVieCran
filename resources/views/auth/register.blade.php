@@ -26,6 +26,34 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="Cran_info" class="col-md-4 col-form-label text-md-right">{{ __('Cran_info') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="Cran_info" type="text" class="form-control{{ $errors->has('Cran_info') ? ' is-invalid' : '' }}" name="Cran_info" value="{{ old('Cran_info') }}" required autofocus>
+
+                                @if ($errors->has('Cran_info'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Cran_info') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('contact') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="contact" type="text" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" name="contact" value="{{ old('contact') }}" required autofocus>
+
+                                @if ($errors->has('contact'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('contact') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">

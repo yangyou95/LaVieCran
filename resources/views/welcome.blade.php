@@ -19,7 +19,7 @@
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
-                
+
             }
 
             .full-height {
@@ -85,11 +85,11 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">二手物品</a>
-                    <a href="#">新闻资讯</a>
+                    <a href="#">二手物品(开放测试)</a>
+                    <a href="#">新闻资讯(开发中)</a>
                     <a href="#">预留1</a>
                     <a href="#">预留2</a>
-                    <a href="https://youyang.me">开发者</a>
+                    <a href="#">开发者</a>
                 </div>
             </div>
         </div>

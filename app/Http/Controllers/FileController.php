@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\File;
+use Auth;
 use Illuminate\Http\Request;
+
 
 class FileController extends Controller
 {
@@ -28,6 +30,11 @@ class FileController extends Controller
         $file = new File;
 
         $file->name = $filename;
+
+
+        $user = Auth::user(); #获取当前登录用户
+
+        $file->user_email =$user->email; #获取当前用户邮箱
 
         $file->size = $filesize;
 

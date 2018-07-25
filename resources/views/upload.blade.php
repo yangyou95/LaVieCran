@@ -1,27 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Upload Files</title>
-  <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap-grid.css" rel="stylesheet">
+@extends('theme_usercenter.default')
 
-</head>
-<body>
 
-    <div class="container">
-      <div class="row">
-        <form action=" {{ route('upload.file')}}" method="post" class="form-horizontal" enctype="multipart/form-data">
-          {{csrf_field()}}
-          <input type="file" name="file">
 
-          <input type="submit" class="btn btn-info">
+@section('content')
 
-        </form>
 
-      </div>
+
+
+<div class="row">
+
+<form class="needs-validation" action="{{route('upload.file')}}" method="POST" enctype="multipart/form-data">
+  {{csrf_field()}}
+
+  <div class="mb-3">
+      <label for="category">物品类别</label>
+      <select class="form-control" name="category">
+
+
+        <option value="Digital">数码电子</option>
+        <option value="Elec">家用电器</option>
+        <option value="Life">生活用品</option>
+        <option value="Cosmetic">护肤美妆</option>
+        <option value="Study">学习用品</option>
+
+
+      </select>
+  </div>
+
+
+
+
+    <div class="mb-3">
+        <label for="title">物品名称</label>
+        <input type="text" class="form-control" name="title" placeholder="title" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="description">物品描述</label>
+        <textarea class="form-control" name="description" rows="10" placeholder="Description" required></textarea>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="title">价格</label>
+        <input type="text" class="form-control" name="prix" placeholder="Entrer le Prix" required>
     </div>
 
 
+    <div class="md-12">
+      <label for="title">物品图片</label>
+      <div class="thumbnail">
+        <div class="caption">
+          <!-- <h3>Image de Peinture</h3> -->
 
-</body>
-</html>
+           <input type="file" name="file" >
+
+
+          </p>
+        </div>
+      </div>
+
+
+
+
+@endsection
