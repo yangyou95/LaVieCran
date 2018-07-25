@@ -10,9 +10,11 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function showUploadForm()
+
+   #sell物品函数定义
+    public function showSellForm()
     {
-      return view('upload');
+      return view('sell');
     }
 
 
@@ -34,7 +36,9 @@ class UserController extends Controller
 
         $user = Auth::user(); #获取当前登录用户
 
-        $sell->user_email =$user->email; #获取当前用户邮箱
+        $sell->user_email = $user->email; #获取当前用户邮箱
+
+        $sell->contact = $user->contact;
 
         $sell->size = $filesize;
 
@@ -45,7 +49,8 @@ class UserController extends Controller
         $sell->description = $request->input('description');
 
         $sell->category = $request->input('category');
-        
+
+
 
         $sell->save();
 
@@ -55,4 +60,39 @@ class UserController extends Controller
 
       return $request->all();
     }
+
+
+  #buy物品函数定义
+    public function showBuyForm()
+    {
+      return view('buy');
+    }
+
+    public function storeBuy(request $request)
+    {
+
+        $user = Auth::user(); #获取当前登录用户
+
+        $sell->user_email = $user->email; #获取当前用户邮箱
+
+        $sell->contact = $user->contact;
+
+        $sell->title = $request->input('title');
+
+        $sell->description = $request->input('description');
+
+        $sell->category = $request->input('category');
+
+
+
+        $sell->save();
+
+        return 'yes';
+      }
+
+
+
+
+
+
 }

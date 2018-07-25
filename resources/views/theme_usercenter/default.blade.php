@@ -18,7 +18,7 @@
 
 
 
-    <title>SB Admin 2 - Bootstrap Admin usercenter</title>
+    <title>LaVieCran用户中心</title>
 
 
 

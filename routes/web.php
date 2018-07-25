@@ -16,10 +16,14 @@ Route::get('/', function () {
 });
 
 
-Route::get('file','FileController@showUploadForm')->name('upload.file');
+// Route::get('file','FileController@showUploadForm')->name('upload.file');
+// Route::post('file','FileController@storeFile');
 
+Route::get('usercenter_sell','UserController@showSellForm')->name('sell');
+Route::post('usercenter_sell','UserController@storeSell');
 
-Route::post('file','FileController@storeFile');
+Route::get('usercenter_buy','UserController@showBuyForm')->name('buy');
+Route::post('usercenter_buy','UserController@storeBuy');
 
 Auth::routes();
 

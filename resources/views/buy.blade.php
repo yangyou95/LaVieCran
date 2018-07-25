@@ -9,7 +9,7 @@
 
 <div class="row">
 
-<form class="needs-validation" action="{{route('upload.file')}}" method="POST" enctype="multipart/form-data">
+<form class="needs-validation" action="{{route('buy')}}" method="POST" enctype="multipart/form-data">
   {{csrf_field()}}
 
   <div class="mb-3">
@@ -20,6 +20,7 @@
         <option value="Digital">数码电子</option>
         <option value="Elec">家用电器</option>
         <option value="Life">生活用品</option>
+        <option value="Cusine">厨房用品</option>
         <option value="Cosmetic">护肤美妆</option>
         <option value="Study">学习用品</option>
 
@@ -38,29 +39,19 @@
     <div class="mb-3">
         <label for="description">物品描述</label>
         <textarea class="form-control" name="description" rows="10" placeholder="Description" required></textarea>
-
-    </div>
-
-    <div class="mb-3">
-        <label for="title">价格</label>
-        <input type="text" class="form-control" name="prix" placeholder="Entrer le Prix" required>
     </div>
 
 
-    <div class="md-12">
-      <label for="title">物品图片</label>
-      <div class="thumbnail">
-        <div class="caption">
-          <!-- <h3>Image de Peinture</h3> -->
-
-           <input type="file" name="file" >
 
 
-          </p>
-        </div>
-      </div>
+  <div class="mb-3">
 
+    <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
 
+</form>
+
+</div>
 
 
 @endsection
