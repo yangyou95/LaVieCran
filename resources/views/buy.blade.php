@@ -17,13 +17,18 @@
       <select class="form-control" name="category">
 
 
-        <option value="Digital">数码电子</option>
+        <!-- <option value="Digital">数码电子</option>
         <option value="Elec">家用电器</option>
         <option value="Life">生活用品</option>
         <option value="Cusine">厨房用品</option>
         <option value="Cosmetic">护肤美妆</option>
-        <option value="Study">学习用品</option>
-
+        <option value="Study">学习用品</option> -->
+        <option >数码电子</option>
+        <option >家用电器</option>
+        <option >生活用品</option>
+        <option >厨房用品</option>
+        <option >护肤美妆</option>
+        <option >学习用品</option>
 
       </select>
   </div>

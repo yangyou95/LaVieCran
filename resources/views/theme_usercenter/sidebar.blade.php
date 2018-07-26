@@ -29,7 +29,7 @@
 
             <li>
 
-                <a href="#"><i class="fa fa-dashboard fa-fw"></i> 信息汇总</a>
+                <a href="home"><i class="fa fa-dashboard fa-fw"></i> 信息汇总</a>
 
             </li>
 

@@ -73,24 +73,29 @@ class UserController extends Controller
 
         $user = Auth::user(); #获取当前登录用户
 
-        $sell->user_email = $user->email; #获取当前用户邮箱
+        $buy = new Buy;
 
-        $sell->contact = $user->contact;
+        $buy->user_email = $user->email; #获取当前用户邮箱
 
-        $sell->title = $request->input('title');
+        $buy->contact = $user->contact;
 
-        $sell->description = $request->input('description');
+        $buy->title = $request->input('title');
 
-        $sell->category = $request->input('category');
+        $buy->description = $request->input('description');
+
+        $buy->category = $request->input('category');
 
 
 
-        $sell->save();
+        $buy->save();
 
         return 'yes';
       }
 
-
+      public function developer()
+      {
+        return view('developer');
+      }
 
 
 

@@ -10,7 +10,7 @@
 
     <div class="col-lg-12">
 
-        <h1 class="page-header">Dashboard</h1>
+        <h1 class="page-header">我的出售</h1>
 
     </div>
 
@@ -25,20 +25,19 @@
 @foreach($sell as $s)
 <div class="col-sm-6 col-md-3">
      <div class="thumbnail">
-        <!-- <img src= "{{ URL::asset('storage/upload/test.jpg') }}"
-         alt="通用的占位符缩略图"> -->
          <div class="image_resize">
-         <img src= "storage/upload/{{$s->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block;>
+         <img src= "storage/upload/{{$s->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
         </div>
         <div class="caption">
             <h3>{{$s->title}}</h3>
             <p>{{$s->description}}</p>
             <p>
                 <a href="#" class="btn btn-primary" role="button">
-                    按钮
+                    查看
                 </a>
+
                 <a href="#" class="btn btn-default" role="button">
-                    按钮
+                    已售出下架
                 </a>
             </p>
         </div>
@@ -46,197 +45,46 @@
 </div>
 
 @endforeach
+</div>
 
+<div class="row">
 
+    <div class="col-lg-12">
+
+        <h1 class="page-header">我的求购</h1>
+
+    </div>
+
+    <!-- /.col-lg-12 -->
 
 </div>
 
-<!-- /.row -->
+<div class="row">
+  <table class="table table-bordered table-responsive" style="margin-top: 10px">
+    <thead>
+      <tr>
+        <th> 物品名称 </th>
+        <th> 物品类别 </th>
+        <th> 物品描述 </th>
+        <th> 联系方式 </th>
+        <th> 创建时间 </th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+    @foreach($buy as $p)
+      <tr>
+        <td> {{$p->title}}</td>
+        <td> {{$p->category}}</td>
+        <td> {{$p->description}}</td>
+        <td> {{$p->contact}}</td>
+        <td> {{$p->created_at}}</td>
+      </tr>
+    @endforeach
+
+    </tbody>
+</div>
 
-<!-- <div class="row">
-
-    <div class="col-lg-3 col-md-6">
-
-        <div class="panel panel-primary">
-
-            <div class="panel-heading">
-
-                <div class="row">
-
-                    <div class="col-xs-3">
-
-                        <i class="fa fa-comments fa-5x"></i>
-
-                    </div>
-
-                    <div class="col-xs-9 text-right">
-
-                        <div class="huge">26</div>
-
-                        <div>New Comments!</div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a href="#">
-
-                <div class="panel-footer">
-
-                    <span class="pull-left">View Details</span>
-
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                    <div class="clearfix"></div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-
-        <div class="panel panel-green">
-
-            <div class="panel-heading">
-
-                <div class="row">
-
-                    <div class="col-xs-3">
-
-                        <i class="fa fa-tasks fa-5x"></i>
-
-                    </div>
-
-                    <div class="col-xs-9 text-right">
-
-                        <div class="huge">12</div>
-
-                        <div>New Tasks!</div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a href="#">
-
-                <div class="panel-footer">
-
-                    <span class="pull-left">View Details</span>
-
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                    <div class="clearfix"></div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-
-        <div class="panel panel-yellow">
-
-            <div class="panel-heading">
-
-                <div class="row">
-
-                    <div class="col-xs-3">
-
-                        <i class="fa fa-shopping-cart fa-5x"></i>
-
-                    </div>
-
-                    <div class="col-xs-9 text-right">
-
-                        <div class="huge">124</div>
-
-                        <div>New Orders!</div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a href="#">
-
-                <div class="panel-footer">
-
-                    <span class="pull-left">View Details</span>
-
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                    <div class="clearfix"></div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-
-        <div class="panel panel-red">
-
-            <div class="panel-heading">
-
-                <div class="row">
-
-                    <div class="col-xs-3">
-
-                        <i class="fa fa-support fa-5x"></i>
-
-                    </div>
-
-                    <div class="col-xs-9 text-right">
-
-                        <div class="huge">13</div>
-
-                        <div>Support Tickets!</div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a href="#">
-
-                <div class="panel-footer">
-
-                    <span class="pull-left">View Details</span>
-
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
-                    <div class="clearfix"></div>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div> -->
 
 @endsection
-
-
-<style>
-/* img{width:330px;height: 180px;}; */
-/* .thumbnail{height: 300px}; */
-</style>

@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 
+
 // Route::get('file','FileController@showUploadForm')->name('upload.file');
 // Route::post('file','FileController@storeFile');
 
@@ -28,3 +29,4 @@ Route::post('usercenter_buy','UserController@storeBuy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('developer', 'UserController@developer');

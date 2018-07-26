@@ -68,28 +68,23 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">用户中心</a>
-                    @else
-                        <a href="{{ route('login') }}">登录</a>
-                        <a href="{{ route('register') }}">注册</a>
-                    @endauth
-                </div>
-            @endif
+
+          <div class="col-sm-6 col-md-3">
+               <div class="thumbnail">
+                   <div class="image_resize">
+                   <img src= "developer/Yang.jpeg" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+                  </div>
+
+               </div>
+          </div>
 
             <div class="content">
                 <div class="title m-b-md">
-                    Cran中国学生服务平台(beta版)
+                    尤扬
                 </div>
 
                 <div class="links">
-                    <a href="#">二手物品(开放测试)</a>
-                    <a href="#">新闻资讯(开发中)</a>
-                    <a href="/home">预留1</a>
-                    <a href="#">预留2</a>
-                    <a href="/developer">开发者</a>
+                    <a href="#">法国国立应用科学学院(Rouen),机械工程系。科研兴趣:机器人，深度强化学习。目前在中国科学院自动化所，复杂系统与智能科学国家重点实验室从事深度强化学习算法实习。</a>
                 </div>
             </div>
         </div>
