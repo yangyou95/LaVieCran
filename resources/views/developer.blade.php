@@ -22,6 +22,7 @@
 
             }
 
+
             .full-height {
                 height: 100vh;
             }
@@ -62,21 +63,21 @@
 
             .m-b-md {
                 margin-bottom: 30px;
-                font-size: 50px;
+                font-size: 35px;
             }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
 
-          <div class="col-sm-6 col-md-3">
+          <!-- <div class="col-sm-6 col-md-3">
                <div class="thumbnail">
                    <div class="image_resize">
-                   <img src= "developer/Yang.jpeg" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+                   <img src="{{ URL::asset('developer/Yang.jpeg') }}" alt="180x100%" style="height: 180px;width: 60%;display: block";>
                   </div>
 
                </div>
-          </div>
+          </div> -->
 
             <div class="content">
                 <div class="title m-b-md">

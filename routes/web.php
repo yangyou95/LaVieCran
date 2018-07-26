@@ -29,4 +29,4 @@ Route::post('usercenter_buy','UserController@storeBuy');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('developer', 'UserController@developer');
+Route::get('/home/developer', 'UserController@developer');

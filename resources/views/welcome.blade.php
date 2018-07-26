@@ -89,7 +89,7 @@
                     <a href="#">新闻资讯(开发中)</a>
                     <a href="/home">预留1</a>
                     <a href="#">预留2</a>
-                    <a href="/developer">开发者</a>
+                    <a href="/home/developer">开发者</a>
                 </div>
             </div>
         </div>
