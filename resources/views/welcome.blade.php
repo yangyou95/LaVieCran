@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>LaVieCran</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -85,10 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="#">二手物品(开放测试)</a>
-                    <a href="#">新闻资讯(开发中)</a>
-                    <a href="/home">预留1</a>
-                    <a href="#">预留2</a>
+                    <a href="items">二手物品(开放测试)</a>
+                    <a href="#">新闻资讯(筹备开发中)</a>
                     <a href="/home/developer">开发者</a>
                 </div>
             </div>

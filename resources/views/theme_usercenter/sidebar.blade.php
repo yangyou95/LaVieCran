@@ -29,7 +29,7 @@
 
             <li>
 
-                <a href="home"><i class="fa fa-dashboard fa-fw"></i> 信息汇总</a>
+                <a href="/home"><i class="fa fa-dashboard fa-fw"></i> 信息汇总</a>
 
             </li>
 
@@ -65,7 +65,7 @@
 
             <li>
 
-                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> 个人项目(筹备建设中)</a>
+                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> 校内新闻(筹备建设中)</a>
 
             </li>
 

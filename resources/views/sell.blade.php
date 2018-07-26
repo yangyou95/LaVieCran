@@ -22,6 +22,8 @@
         <option value="Life">生活用品</option>
         <option value="Cosmetic">护肤美妆</option>
         <option value="Study">学习用品</option>
+        <option value="Cusine">厨房用品</option>
+
 
 
       </select>
@@ -32,18 +34,18 @@
 
     <div class="mb-3">
         <label for="title">物品名称</label>
-        <input type="text" class="form-control" name="title" placeholder="title" required>
+        <input type="text" class="form-control" name="title" placeholder="请填写物品的名称" required>
     </div>
 
     <div class="mb-3">
         <label for="description">物品描述</label>
-        <textarea class="form-control" name="description" rows="10" placeholder="Description" required></textarea>
+        <textarea class="form-control" name="description" rows="10" placeholder="请填写对物品的描述" required></textarea>
 
     </div>
 
     <div class="mb-3">
         <label for="title">价格</label>
-        <input type="text" class="form-control" name="prix" placeholder="Entrer le Prix" required>
+        <input type="text" class="form-control" name="prix" placeholder="请填写价格，例如：“20磅”" required>
     </div>
 
 

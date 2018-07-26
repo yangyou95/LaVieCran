@@ -37,7 +37,7 @@
                 </a>
 
                 <a href="#" class="btn btn-default" role="button">
-                    已售出下架
+                    下架该物品
                 </a>
             </p>
         </div>
@@ -68,6 +68,7 @@
         <th> 物品描述 </th>
         <th> 联系方式 </th>
         <th> 创建时间 </th>
+        <th> 操作 </th>
 
 
       </tr>
@@ -80,6 +81,13 @@
         <td> {{$p->description}}</td>
         <td> {{$p->contact}}</td>
         <td> {{$p->created_at}}</td>
+      <td>  <a href="#" class="btn btn-primary" role="button">
+            编辑
+        </a>
+        <a href="#" class="btn btn-default" role="button">
+             删除
+         </a>
+      </td>
       </tr>
     @endforeach
 

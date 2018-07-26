@@ -38,12 +38,12 @@
 
     <div class="mb-3">
         <label for="title">物品名称</label>
-        <input type="text" class="form-control" name="title" placeholder="title" required>
+        <input type="text" class="form-control" name="title" placeholder="请输入物品的名称" required>
     </div>
 
     <div class="mb-3">
         <label for="description">物品描述</label>
-        <textarea class="form-control" name="description" rows="10" placeholder="Description" required></textarea>
+        <textarea class="form-control" name="description" rows="10" placeholder="请填写对该物品的描述" required></textarea>
     </div>
 
 
