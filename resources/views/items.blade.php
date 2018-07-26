@@ -17,14 +17,14 @@
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 300vh;
+                height: auto;
                 margin: 0;
 
             }
 
 
             .full-height {
-                height: 300vh;
+                height: auto;
             }
 
             .flex-center {
@@ -45,6 +45,8 @@
 
             .content {
                 text-align: center;
+                margin-top: 30px;
+
             }
 
             .title {
@@ -62,9 +64,14 @@
             }
 
             .m-b-md {
-                /* margin-bottom: 30px; */
+                margin-bottom: 30px;
                 font-size: 35px;
             }
+            .row{
+              text-align: center;
+            }
+
+
         </style>
     </head>
     <body>
@@ -84,11 +91,11 @@
             <div class="content">
 
               <div>
-                <div class="title m-b-md">
+                <div class="title m-b-md page-header">
                     数码电子
               </div>
 
-                <div class="links">
+
                   <div class="row">
 
 
@@ -115,11 +122,11 @@
                   @endforeach
                   </div>
             </div>
-          </div>
+
 
 
           <div>
-            <div class="title m-b-md">
+            <div class="title m-b-md page-header">
                 家用电器
           </div>
 
@@ -153,7 +160,7 @@
       </div>
 
       <div>
-        <div class="title m-b-md">
+        <div class="title m-b-md page-header">
             生活用品
       </div>
 
@@ -188,7 +195,7 @@
 
 
   <div>
-    <div class="title m-b-md">
+    <div class="title m-b-md page-header">
         护肤美妆
   </div>
 
@@ -222,7 +229,7 @@
 </div>
 
 <div>
-  <div class="title m-b-md">
+  <div class="title m-b-md page-header">
       学习用品
 </div>
 
@@ -257,7 +264,7 @@
 
 
 <div>
-  <div class="title m-b-md">
+  <div class="title m-b-md page-header">
       厨房用品
 </div>
 
@@ -279,7 +286,7 @@
                         查看
                     </a>
 
-                
+
                 </p>
             </div>
          </div>
