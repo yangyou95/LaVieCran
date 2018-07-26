@@ -27,8 +27,9 @@
      <div class="thumbnail">
         <!-- <img src= "{{ URL::asset('storage/upload/test.jpg') }}"
          alt="通用的占位符缩略图"> -->
-         <img src= "storage/upload/{{$s->image_name}}"
-          alt="通用的占位符缩略图" class="image_resize";>
+         <div class="image_resize">
+         <img src= "storage/upload/{{$s->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block;>
+        </div>
         <div class="caption">
             <h3>{{$s->title}}</h3>
             <p>{{$s->description}}</p>
@@ -236,5 +237,6 @@
 
 
 <style>
-img{width:330px;height: 180px;}
+/* img{width:330px;height: 180px;}; */
+/* .thumbnail{height: 300px}; */
 </style>
