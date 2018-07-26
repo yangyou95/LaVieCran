@@ -18,9 +18,41 @@
 
 </div>
 
-<!-- /.row -->
 
 <div class="row">
+
+
+@foreach($sell as $s)
+<div class="col-sm-6 col-md-3">
+     <div class="thumbnail">
+        <!-- <img src= "{{ URL::asset('storage/upload/test.jpg') }}"
+         alt="通用的占位符缩略图"> -->
+         <img src= "storage/upload/{{$s->image_name}}"
+          alt="通用的占位符缩略图" class="image_resize";>
+        <div class="caption">
+            <h3>{{$s->title}}</h3>
+            <p>{{$s->description}}</p>
+            <p>
+                <a href="#" class="btn btn-primary" role="button">
+                    按钮
+                </a>
+                <a href="#" class="btn btn-default" role="button">
+                    按钮
+                </a>
+            </p>
+        </div>
+     </div>
+</div>
+
+@endforeach
+
+
+
+</div>
+
+<!-- /.row -->
+
+<!-- <div class="row">
 
     <div class="col-lg-3 col-md-6">
 
@@ -198,6 +230,11 @@
 
     </div>
 
-</div>
+</div> -->
 
 @endsection
+
+
+<style>
+img{width:330px;height: 180px;}
+</style>

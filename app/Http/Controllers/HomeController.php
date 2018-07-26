@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Sell;
+use App\Buy;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $user = Auth::user(); #获取当前登录用户
+        $user_email =$user->email;
+        // $sell = Sell::find($user->email); #按照当前用户邮箱查找sell
+        $sell = Sell::where('user_email',$user_email)->get(); #按照当前用户邮箱查找sell
+
+        return view('home',compact('sell'));
     }
 }

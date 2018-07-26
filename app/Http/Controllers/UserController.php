@@ -22,7 +22,7 @@ class UserController extends Controller
     {
       if ($request->hasFile('file')){
 
-        $filename = $request->file->getClientOriginalName(); #变量存储文件名称
+        $filename = $request->file->getFileName(); #变量存储文件名称
 
         $filesize = $request->file->getClientSize(); #变量存储文件大小
 
