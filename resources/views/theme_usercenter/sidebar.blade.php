@@ -59,13 +59,13 @@
 
             <li>
 
-                <a href="tables.html"><i class="fa fa-table fa-fw"></i> 个人Cran资料</a>
+                <a href="#"><i class="fa fa-table fa-fw"></i> 个人Cran资料</a>
 
             </li>
 
             <li>
 
-                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> 校内新闻(筹备建设中)</a>
+                <a href="#"><i class="fa fa-edit fa-fw"></i> 校内新闻(筹备建设中)</a>
 
             </li>
 

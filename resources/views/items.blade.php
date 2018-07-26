@@ -25,6 +25,7 @@
 
             .full-height {
                 height: auto;
+                margin-bottom: 30px;
             }
 
             .flex-center {
@@ -95,7 +96,7 @@
                     数码电子
               </div>
 
-
+     <div class="links">
                   <div class="row">
 
 
@@ -121,7 +122,10 @@
 
                   @endforeach
                   </div>
+
+                  <a href ="digital">点击查看更多</a>
             </div>
+          </div>
 
 
 
@@ -156,6 +160,8 @@
 
               @endforeach
               </div>
+
+              <a href ="#">点击查看更多</a>
         </div>
       </div>
 
@@ -190,6 +196,7 @@
 
           @endforeach
           </div>
+          <a href ="#">点击查看更多</a>
     </div>
   </div>
 
@@ -225,6 +232,7 @@
 
       @endforeach
       </div>
+      <a href ="#">点击查看更多</a>
 </div>
 </div>
 
@@ -259,6 +267,7 @@
 
     @endforeach
     </div>
+    <a href ="#">点击查看更多</a>
 </div>
 </div>
 
@@ -294,6 +303,7 @@
 
     @endforeach
     </div>
+    <a href ="#">点击查看更多</a>
 </div>
 </div>
 

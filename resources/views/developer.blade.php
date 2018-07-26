@@ -62,8 +62,9 @@
             }
 
             .m-b-md {
+               margin-top: 30px;
                 margin-bottom: 30px;
-                font-size: 35px;
+                font-size: 25px;
             }
         </style>
     </head>
@@ -81,11 +82,19 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    尤扬
+                    开发者:尤扬
                 </div>
 
                 <div class="links">
                     <a href="#">法国国立应用科学学院(Rouen),机械工程系。科研兴趣:机器人，深度强化学习。目前在中国科学院自动化所，复杂系统与智能科学国家重点实验室从事深度强化学习算法实习。</a>
+                </div>
+
+                <div class="title m-b-md">
+                    运营/测试团队: 期待你的加入！
+                </div>
+
+                <div class="links">
+                    <a href="#">欢迎各位对运营/测试感兴趣的同学加入这个项目，你的名字将被显示在项目团队里，另外欢迎有前端或后端开发经验的小伙伴加入。</a>
                 </div>
             </div>
         </div>

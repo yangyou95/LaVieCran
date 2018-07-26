@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('items','ItemsController@showItems');
+Route::get('digital','ItemsController@showDigital');
 
 // Route::get('file','FileController@showUploadForm')->name('upload.file');
 // Route::post('file','FileController@storeFile');
