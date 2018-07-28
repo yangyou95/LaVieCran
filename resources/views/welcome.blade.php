@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +51,7 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            .links >a{
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
@@ -58,11 +59,17 @@
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
+
+            }
+
+            a{
+              margin-top: 5px;
+              margin-bottom: 10px;
             }
 
             .m-b-md {
                 margin-bottom: 30px;
-                font-size: 50px;
+                font-size: 30px;
             }
         </style>
     </head>
@@ -79,17 +86,29 @@
                 </div>
             @endif
 
+
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md col-sm-12">
                     Cran中国学生服务平台(beta版)
                 </div>
 
-                <div class="links">
-                    <a href="items">二手物品(开放测试)</a>
-                    <a href="#">新闻资讯(筹备开发中)</a>
-                    <a href="/home/developer">开发者</a>
-                </div>
+
+                <div class="row ">
+
+                       <span class="col-xs-12 col-sm-12 links" ><a href="items" >二手物品(开放测试)</a></span>
+                       <span class="col-xs-12 col-sm-4 links" ><a href="#" >新闻资讯(筹备中)</a></span>
+                     <span class="col-xs-12 col-sm-4 links" >  <a href="/home/developer">开发者</a></span>
+
+                 </div>
             </div>
+
+
+
         </div>
+
+
+
+
+
     </body>
 </html>
