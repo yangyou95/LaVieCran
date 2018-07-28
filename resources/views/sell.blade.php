@@ -55,7 +55,7 @@
         <div class="caption">
           <!-- <h3>Image de Peinture</h3> -->
 
-           <input type="file" name="file" >
+           <input type="file" name="file" required>
 
 
           <p class="text-muted">请各位同学不要传过大的图片。例如10M一张的图，我李云龙可就要开炮了。</p>
