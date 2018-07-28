@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('FILESYSTEM_DRIVER', 'local'),
+    'default' => env('FILESYSTEM_DRIVER', 's3'),
 
     /*
     |--------------------------------------------------------------------------
@@ -57,11 +57,11 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
-            'bucket' => env('AWS_BUCKET'),
-            'url' => env('AWS_URL'),
+            'key' => 'AKIAJFNU5QTGUA7XFB7A',
+            'secret' => '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',
+            'region' => "eu-west-2",
+            'bucket' => 'yangprojectofcranfield',
+            'url' => env('https://eu-west-2.amazonaws.com/yangprojectofcranfield '),
         ],
         'admin' => [
       'driver'     => 'local',

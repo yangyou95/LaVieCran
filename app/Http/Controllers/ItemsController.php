@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Sell;
 use App\Buy;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 
 class ItemsController extends Controller
@@ -52,6 +54,12 @@ class ItemsController extends Controller
 
     public function destroySell($id)
     {
+      $sell_info = Sell::find($id);
+
+      $sell_image_name = $sell_info->image_name;
+
+      Storage::delete($sell_image_name);
+
       Sell::find($id)->delete();
 
       return view('success_delete');

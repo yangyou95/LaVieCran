@@ -115,7 +115,7 @@
 
 
                     <div class="image_resize">
-                    <img src= "../../storage/upload/{{$Itemdetail->image_name}}" alt="180x100%" style="height: 700px;width: auto;max-width: 1200px;";>
+                    <img src= "{{$Itemdetail->path}}" alt="180x100%" style="height: 700px;width: auto;max-width: 1200px;";>
                    </div>
 
 

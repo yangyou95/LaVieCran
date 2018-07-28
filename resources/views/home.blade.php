@@ -26,7 +26,7 @@
 <div class="col-sm-6 col-md-3">
      <div class="thumbnail">
          <div class="image_resize">
-         <img src= "storage/upload/{{$s->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+         <img src= "{{$s->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
         </div>
         <div class="caption">
             <h3>{{$s->title}}</h3>

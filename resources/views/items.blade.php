@@ -118,7 +118,7 @@
                   <div class="col-sm-6 col-md-3">
                        <div class="thumbnail">
                            <div class="image_resize">
-                           <img src= "storage/upload/{{$d->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+                           <img src= "{{$d->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                           </div>
                           <div class="caption">
                               <h3>{{$d->title}}</h3>
@@ -158,7 +158,7 @@
               <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
                        <div class="image_resize">
-                       <img src= "storage/upload/{{$e->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+                       <img src= "{{$e->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                       </div>
                       <div class="caption">
                           <h3>{{$e->title}}</h3>
@@ -196,7 +196,7 @@
           <div class="col-sm-6 col-md-3">
                <div class="thumbnail">
                    <div class="image_resize">
-                   <img src= "storage/upload/{{$l->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+                   <img src= "{{$l->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                   </div>
                   <div class="caption">
                       <h3>{{$l->title}}</h3>
@@ -234,7 +234,7 @@
       <div class="col-sm-6 col-md-3">
            <div class="thumbnail">
                <div class="image_resize">
-               <img src= "storage/upload/{{$c->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+               <img src= "{{$c->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
               </div>
               <div class="caption">
                   <h3>{{$c->title}}</h3>
@@ -271,7 +271,7 @@
     <div class="col-sm-6 col-md-3">
          <div class="thumbnail">
              <div class="image_resize">
-             <img src= "storage/upload/{{$s->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+             <img src= "{{$s->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
             </div>
             <div class="caption">
                 <h3>{{$s->title}}</h3>
@@ -309,7 +309,7 @@
     <div class="col-sm-6 col-md-3">
          <div class="thumbnail">
              <div class="image_resize">
-             <img src= "storage/upload/{{$cu->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
+             <img src= "{{$cu->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
             </div>
             <div class="caption">
                 <h3>{{$cu->title}}</h3>

@@ -7,6 +7,8 @@ use App\Buy;
 use Auth;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 
 class UserController extends Controller
@@ -27,9 +29,18 @@ class UserController extends Controller
 
         $filesize = $request->file->getClientSize(); #变量存储文件大小
 
-        $filepath = $request->file->storeAs('public/upload',$filename);  #变量存储文件存放路径
+        // $filepath = $request->file->storeAs('public/upload',$filename);  #变量存储文件存放路径
 
-        $request->file->storeAs('public/upload',$filename); #将文件按照原名称放入服务器地址
+        //Upload File to s3
+
+        // Storage::disk('s3')->put($filename, fopen($request->file('file'), 'r+'), 'public');
+
+
+
+        $request->file->storeAs('/',$filename); #将文件按照原名称放入服务器地址
+
+        $filepath = Storage::url($filename);
+
 
         $sell = new Sell;
 
