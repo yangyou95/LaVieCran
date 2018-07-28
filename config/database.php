@@ -1,10 +1,10 @@
 <?php
 
-$url = parse=url(getenv("DATABASE_URL"));
-$host = $url["host"]??null;
-$username = $url["user"]??null;
-$password = $url["pass"]??null;
-$database = substr($url["path"],1)??null;
+// $url = parse=url(getenv("DATABASE_URL"));
+// $host = $url["host"]??null;
+// $username = $url["user"]??null;
+// $password = $url["pass"]??null;
+// $database = substr($url["path"],1)??null;
 
 
 
@@ -77,10 +77,10 @@ return [
 
         'pgsql_production' => [
             'driver' => 'pgsql',
-            'host' => $host,
-            'database' => $databse,
-            'username' => $username,
-            'password' => $password,
+            'host'     => parse_url(getenv("DATABASE_URL"))["host"],
+            'database' => substr(parse_url(getenv("DATABASE_URL"))["path"], 1),
+            'username' => parse_url(getenv("DATABASE_URL"))["user"],
+            'password' => parse_url(getenv("DATABASE_URL"))["pass"],
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
