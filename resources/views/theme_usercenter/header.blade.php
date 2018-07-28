@@ -206,11 +206,11 @@
 
             <ul class="dropdown-menu dropdown-user">
 
-                <li><a href="#"><i class="fa fa-user fa-fw"></i> 用户 {{ Auth::user()->name }} 资料</a>
+                <li><a href="/home"><i class="fa fa-user fa-fw"></i> 用户 {{ Auth::user()->name }} 资料</a>
 
                 </li>
 
-                <li><a href="#"><i class="fa fa-gear fa-fw"></i> 用户设置</a>
+                <li><a href="/home/craninfo"><i class="fa fa-gear fa-fw"></i> 用户设置</a>
 
                 </li>
 

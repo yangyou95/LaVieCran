@@ -58,7 +58,7 @@
            <input type="file" name="file" >
 
 
-          </p>
+          <p class="text-muted">请各位同学不要传过大的图片。例如10M一张的图，我李云龙可就要开炮了。</p>
         </div>
       </div>
     </div>
