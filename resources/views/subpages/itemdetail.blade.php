@@ -129,6 +129,7 @@
        <div class="title">
          <h1>{{$Itemdetail->title}}</h1>
          <h2>{{$Itemdetail->description}}</h2>
+         <h2>{{$Itemdetail->price}}</h2>
          <h2>{{$Itemdetail->contact}}</h2>
 
        </div>

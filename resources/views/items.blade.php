@@ -122,7 +122,7 @@
                           </div>
                           <div class="caption">
                               <h3>{{$d->title}}</h3>
-                              <p>{{$d->description}}</p>
+                              <p>{{$d->price}}</p>
                               <p><small class="text-muted">{{$d->created_at}}</small></p>
 
                               <p>
@@ -162,7 +162,7 @@
                       </div>
                       <div class="caption">
                           <h3>{{$e->title}}</h3>
-                          <p>{{$e->description}}</p>
+                          <p>{{$e->price}}</p>
                           <p><small class="text-muted">{{$e->created_at}}</small></p>
 
                           <p>
@@ -200,7 +200,7 @@
                   </div>
                   <div class="caption">
                       <h3>{{$l->title}}</h3>
-                      <p>{{$l->description}}</p>
+                      <p>{{$l->price}}</p>
                       <p><small class="text-muted">{{$l->created_at}}</small></p>
 
                       <p>
@@ -238,7 +238,7 @@
               </div>
               <div class="caption">
                   <h3>{{$c->title}}</h3>
-                  <p>{{$c->description}}</p>
+                  <p>{{$c->price}}</p>
                   <p><small class="text-muted">{{$c->created_at}}</small></p>
 
                   <p>
@@ -275,7 +275,7 @@
             </div>
             <div class="caption">
                 <h3>{{$s->title}}</h3>
-                <p>{{$s->description}}</p>
+                <p>{{$s->price}}</p>
                 <p><small class="text-muted">{{$s->created_at}}</small></p>
 
                 <p>
@@ -313,7 +313,7 @@
             </div>
             <div class="caption">
                 <h3>{{$cu->title}}</h3>
-                <p>{{$cu->description}}</p>
+                <p>{{$cu->price}}</p>
                 <p><small class="text-muted">{{$cu->created_at}}</small></p>
 
                 <p>
