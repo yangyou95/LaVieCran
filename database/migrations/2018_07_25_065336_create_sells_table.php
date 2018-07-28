@@ -20,6 +20,7 @@ class CreateSellsTable extends Migration
             $table->string('category');
             $table->string('title');
             $table->string('description');
+            $table->string('price');
             $table->string('contact');
             $table->string('size');
             $table->string('path');

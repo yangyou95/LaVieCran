@@ -16,18 +16,37 @@ Route::get('/', function () {
 });
 
 Route::get('items','ItemsController@showItems');
-Route::get('digital','ItemsController@showDigital');
+// Route::get('digital','ItemsController@showDigital');
+Route::get('buy','ItemsController@showBuy');
+
+Route::get('items/category/{id}','ItemsController@showItemByID');
+
+
+// Route::get('sell/{category}','ItemsController@showCategory');
+Route::get('items/{category}','ItemsController@showCategory');
+
+
 
 // Route::get('file','FileController@showUploadForm')->name('upload.file');
 // Route::post('file','FileController@storeFile');
 
-Route::get('usercenter_sell','UserController@showSellForm')->name('sell');
-Route::post('usercenter_sell','UserController@storeSell');
+Route::get('/home/usercenter_sell','UserController@showSellForm')->name('sell');
+Route::post('/home/usercenter_sell','UserController@storeSell');
 
-Route::get('usercenter_buy','UserController@showBuyForm')->name('buy');
-Route::post('usercenter_buy','UserController@storeBuy');
+Route::get('/home/usercenter_buy','UserController@showBuyForm')->name('buy');
+Route::post('home/usercenter_buy','UserController@storeBuy');
+
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/home/developer', 'UserController@developer');
+Route::get('/home/craninfo', 'UserController@craninfo')->name('info');
+Route::post('/home/craninfo', 'UserController@updateinfo');
+
+
+
+
+Route::get('delete/sell/{id}','ItemsController@destroySell');
+Route::get('delete/buy/{id}','ItemsController@destroyBuy');

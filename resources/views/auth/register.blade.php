@@ -43,7 +43,7 @@
                             <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('联系方式') }}</label>
 
                             <div class="col-md-6">
-                                <input id="contact" type="text" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" name="contact" value="{{ old('contact') }}" placeholder="用于物品出售与购买时显示，可在用户中心更改。" required autofocus>
+                                <input id="contact" type="text" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" name="contact" value="{{ old('contact') }}" placeholder="用于物品出售与购买时显示，可在用户中心更改" required autofocus>
 
                                 @if ($errors->has('contact'))
                                     <span class="invalid-feedback" role="alert">
@@ -57,7 +57,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('邮箱地址') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="请输入您的邮箱"required>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback" role="alert">
@@ -85,14 +85,14 @@
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('确认密码') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="请确认您的密码" required>
                             </div>
                         </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('注册') }}
                                 </button>
                             </div>
                         </div>

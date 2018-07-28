@@ -4,7 +4,11 @@
 
 @section('content')
 
-
+<style>
+.dd{
+  margin-top: 10px;
+}
+</style>
 
 
 <div class="row">
@@ -49,9 +53,9 @@
 
 
 
-  <div class="mb-3">
+  <div class="mb-3 dd" >
 
-    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-primary" type="submit">提交</button>
     </div>
 
 </form>

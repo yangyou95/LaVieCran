@@ -46,6 +46,7 @@
 
 
 
+
     <!-- Custom Fonts -->
 
     <link href="{!! asset('usercenter/vendor/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet" type="text/css">
@@ -122,7 +123,9 @@
 
     <script src="{!! asset('usercenter/dist/js/sb-admin-2.js') !!}"></script>
 
+   <!-- jquery.confirm  -->
 
+    <script src="{{! asset('js/jequry.confirm.js')}}"</script>
 
 </body>
 

@@ -41,13 +41,13 @@
 
                     <li>
 
-                        <a href="usercenter_sell">我要出售</a>
+                        <a href="/home/usercenter_sell">我要出售</a>
 
                     </li>
 
                     <li>
 
-                        <a href="usercenter_buy">我要求购</a>
+                        <a href="/home/usercenter_buy">我要求购</a>
 
                     </li>
 
@@ -59,7 +59,7 @@
 
             <li>
 
-                <a href="#"><i class="fa fa-table fa-fw"></i> 个人Cran资料</a>
+                <a href="/home/craninfo"><i class="fa fa-table fa-fw"></i> 个人Cran资料</a>
 
             </li>
 

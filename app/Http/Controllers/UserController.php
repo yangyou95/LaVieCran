@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Sell;
 use App\Buy;
 use Auth;
+use App\User;
 use Illuminate\Http\Request;
 
 
@@ -50,11 +51,13 @@ class UserController extends Controller
 
         $sell->category = $request->input('category');
 
+        $sell->price = $request->input('price');
+
 
 
         $sell->save();
 
-        return 'yes';
+        return view('success');
       }
 
 
@@ -89,7 +92,7 @@ class UserController extends Controller
 
         $buy->save();
 
-        return 'yes';
+        return view('success');
       }
 
       public function developer()
@@ -97,6 +100,28 @@ class UserController extends Controller
         return view('developer');
       }
 
+      public function craninfo()
+      {
+
+        $user = Auth::user(); #获取当前登录用户
+
+        return view('craninfo',compact('user'));
+      }
+
+      public function updateinfo(request $request)
+      {
+
+        $user = Auth::user(); #获取当前登录用户
+
+        $newcontact = $request->input('newcontact');
+
+        $user->contact = $newcontact;
+
+        $user->save();
+
+        return view('success');
+
+      }
 
 
 

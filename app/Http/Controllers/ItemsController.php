@@ -12,7 +12,7 @@ class ItemsController extends Controller
     public function showItems()
     {
 
-      $buy = Buy::all();
+
       // $sell = none
 
       $Digital = Sell::where('category','Digital')->take(4)->get(); #按照类别查找并输出前四个
@@ -23,55 +23,45 @@ class ItemsController extends Controller
       $Cusine = Sell::where('category','Cusine')->take(4)->get();
 
 
-      return view('items',compact('Digital','Life','Study','Elec','Cosmetic','Cusine','buy'));
+      return view('items',compact('Digital','Life','Study','Elec','Cosmetic','Cusine'));
     }
 
-    public function showDigital()
+    public function showBuy()
     {
-      $Digital = Sell::where('category','Digital')->get(); #按照类别查找并输出
+      $buy = Buy::all();
 
-      return view('subpages/digital',compact('Digital'));
-
+      return view('wantbuy',compact('buy'));
     }
 
-    public function showLife()
+
+
+
+    public function showCategory($category)
     {
-      $Life = Sell::where('category','Life')->get(); #按照类别查找并输出
+      $sells = sell::where('category',$category)->get();
 
-      return view('subpages/life',compact('Life'));
-
+      return view('subpages/sellCategory',compact('sells'));
     }
 
-    public function showStudy()
+    public function showItemByID($id)
     {
-      $Study = Sell::where('category','Study')->get(); #按照类别查找并输出
+      $Itemdetail = Sell::find($id);
 
-      return view('subpages/study',compact('Study'));
-
+      return view('subpages/itemdetail',compact('Itemdetail'));
     }
 
-    public function showElec()
+    public function destroySell($id)
     {
-      $Elec = Sell::where('category','Elec')->get(); #按照类别查找并输出
+      Sell::find($id)->delete();
 
-      return view('subpages/elec',compact('Elec'));
-
+      return view('success_delete');
     }
 
-    public function showCosmetic()
+    public function destroyBuy($id)
     {
-      $Cosmetic = Sell::where('category','Cosmetic')->get(); #按照类别查找并输出
+      Buy::find($id)->delete();
 
-      return view('subpages/cosmetic',compact('Cosmetic'));
-
-    }
-
-    public function showCusine()
-    {
-      $Cusine = Sell::where('category','Cusine')->get(); #按照类别查找并输出
-
-      return view('subpages/cusine',compact('Cusine'));
-
+      return view('success_delete');
     }
 
 }

@@ -44,13 +44,13 @@
     </div>
 
     <div class="mb-3">
-        <label for="title">价格</label>
-        <input type="text" class="form-control" name="prix" placeholder="请填写价格，例如：“20磅”" required>
+        <label for="price">价格</label>
+        <input type="text" class="form-control" name="price" placeholder="请填写价格，例如：“20磅”" required>
     </div>
 
 
     <div class="md-12">
-      <label for="title">物品图片</label>
+      <label for="file">物品图片</label>
       <div class="thumbnail">
         <div class="caption">
           <!-- <h3>Image de Peinture</h3> -->
@@ -64,7 +64,7 @@
     </div>
 
 
-    <button class="btn btn-primary" type="submit">Submit</button>
+    <button class="btn btn-primary" type="submit">提交</button>
 
 </form>
 

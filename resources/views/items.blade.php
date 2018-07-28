@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>开发者</title>
+        <title>二手物品</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -44,6 +44,7 @@
                 top: 18px;
             }
 
+
             .content {
                 text-align: center;
                 margin-top: 30px;
@@ -73,16 +74,29 @@
             }
 
 
+
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+            <!-- <div class="top-left links">
+              <a href="{{ url('/') }}">首页</a>
+              <a href="{{ url('/home') }}">二手物品</a>
+              <a href="{{ url('/home') }}">求购信息</a>
+
+            </div> -->
 
           @if (Route::has('login'))
               <div class="top-right links">
                   @auth
+                  <a href="{{ url('/') }}">首页</a>
+                  <a href="{{ url('/items') }}">二手物品</a>
+                  <a href="{{ url('/buy') }}">求购信息</a>
                       <a href="{{ url('/home') }}">用户中心</a>
                   @else
+                  <a href="{{ url('/') }}">首页</a>
+                  <a href="{{ url('/items') }}">二手物品</a>
+                  <a href="{{ url('/buy') }}">求购信息</a>
                       <a href="{{ route('login') }}">登录</a>
                       <a href="{{ route('register') }}">注册</a>
                   @endauth
@@ -109,8 +123,10 @@
                           <div class="caption">
                               <h3>{{$d->title}}</h3>
                               <p>{{$d->description}}</p>
+                              <p><small class="text-muted">{{$d->created_at}}</small></p>
+
                               <p>
-                                  <a href="#" class="btn btn-primary" role="button">
+                                  <a href="items/category/{{$d->id}}" class="btn btn-primary" role="button">
                                       查看
                                   </a>
 
@@ -123,7 +139,7 @@
                   @endforeach
                   </div>
 
-                  <a href ="digital">点击查看更多</a>
+                  <a href ="items/Digital">点击查看更多数码电子</a>
             </div>
           </div>
 
@@ -147,8 +163,10 @@
                       <div class="caption">
                           <h3>{{$e->title}}</h3>
                           <p>{{$e->description}}</p>
+                          <p><small class="text-muted">{{$e->created_at}}</small></p>
+
                           <p>
-                              <a href="#" class="btn btn-primary" role="button">
+                              <a href="items/category/{{$e->id}}" class="btn btn-primary" role="button">
                                   查看
                               </a>
 
@@ -161,7 +179,7 @@
               @endforeach
               </div>
 
-              <a href ="#">点击查看更多</a>
+              <a href ="items/Elec">点击查看更多家用电器</a>
         </div>
       </div>
 
@@ -183,8 +201,10 @@
                   <div class="caption">
                       <h3>{{$l->title}}</h3>
                       <p>{{$l->description}}</p>
+                      <p><small class="text-muted">{{$l->created_at}}</small></p>
+
                       <p>
-                          <a href="#" class="btn btn-primary" role="button">
+                          <a href="items/category/{{$l->id}}" class="btn btn-primary" role="button">
                               查看
                           </a>
 
@@ -196,7 +216,7 @@
 
           @endforeach
           </div>
-          <a href ="#">点击查看更多</a>
+          <a href ="items/Life">点击查看更多生活用品</a>
     </div>
   </div>
 
@@ -219,8 +239,10 @@
               <div class="caption">
                   <h3>{{$c->title}}</h3>
                   <p>{{$c->description}}</p>
+                  <p><small class="text-muted">{{$c->created_at}}</small></p>
+
                   <p>
-                      <a href="#" class="btn btn-primary" role="button">
+                      <a href="items/category/{{$c->id}}" class="btn btn-primary" role="button">
                           查看
                       </a>
 
@@ -232,7 +254,7 @@
 
       @endforeach
       </div>
-      <a href ="#">点击查看更多</a>
+      <a href ="items/Cosmetic">点击查看更多护肤美妆</a>
 </div>
 </div>
 
@@ -254,8 +276,10 @@
             <div class="caption">
                 <h3>{{$s->title}}</h3>
                 <p>{{$s->description}}</p>
+                <p><small class="text-muted">{{$s->created_at}}</small></p>
+
                 <p>
-                    <a href="#" class="btn btn-primary" role="button">
+                    <a href="items/category/{{$s->id}}" class="btn btn-primary" role="button">
                         查看
                     </a>
 
@@ -267,7 +291,7 @@
 
     @endforeach
     </div>
-    <a href ="#">点击查看更多</a>
+    <a href ="items/Study">点击查看更多学习用品</a>
 </div>
 </div>
 
@@ -290,20 +314,22 @@
             <div class="caption">
                 <h3>{{$cu->title}}</h3>
                 <p>{{$cu->description}}</p>
+                <p><small class="text-muted">{{$cu->created_at}}</small></p>
+
                 <p>
-                    <a href="#" class="btn btn-primary" role="button">
+                    <a href="items/category/{{$cu->id}}" class="btn btn-primary" role="button">
                         查看
                     </a>
-
-
                 </p>
+
+
             </div>
          </div>
     </div>
 
     @endforeach
     </div>
-    <a href ="#">点击查看更多</a>
+    <a href ="items/Cusine">点击查看更多厨房用品</a>
 </div>
 </div>
 
