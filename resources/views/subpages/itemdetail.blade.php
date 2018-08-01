@@ -51,7 +51,8 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 37px;
+                text-align: center;
             }
 
             .links > a {
@@ -99,7 +100,7 @@
               </div>
           @endif
 
-            <div class="content">
+            <div class="container">
 
               <div>
                 <div class="title m-b-md page-header">
@@ -108,30 +109,18 @@
 
      <div class="links">
                   <div class="row">
-
-
-
-
-
-
                     <div class="image_resize">
-                    <img src= "{{$Itemdetail->path}}" alt="180x100%" style="height: 700px;width: auto;max-width: 1200px;";>
+                    <img src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-width: 1200px;";>
                    </div>
-
-
-
                  </div>
-
-
             </div>
 
 
        <div class="title">
-         <h1>{{$Itemdetail->title}}</h1>
-         <h2>{{$Itemdetail->description}}</h2>
-         <h2>{{$Itemdetail->price}}</h2>
-         <h2>{{$Itemdetail->contact}}</h2>
-
+         <h3>物品名称：{{$Itemdetail->title}}</h3>
+         <h3>物品描述：{{$Itemdetail->description}}</h3>
+         <h3>物品价格：{{$Itemdetail->price}}</h3>
+         <h3>联系方式：{{$Itemdetail->contact}}</h3>
        </div>
 
           </div>
