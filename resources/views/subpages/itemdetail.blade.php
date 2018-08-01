@@ -109,7 +109,7 @@
 
      <div class="links">
                   <div class="row">
-                    <div class="image_resize">
+                    <div class="image_resize col-xs-9">
                     <img src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-width: 1200px;";>
                    </div>
                  </div>
