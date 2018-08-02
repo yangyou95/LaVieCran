@@ -9,7 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-  <link href="{!! asset('usercenter/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
+  <link href="{!! secure_asset('usercenter/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
         <!-- Styles -->
         <style>
             html, body {
