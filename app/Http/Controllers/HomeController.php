@@ -29,8 +29,8 @@ class HomeController extends Controller
         $user = Auth::user(); #获取当前登录用户
         $user_email =$user->email;
         // $sell = Sell::find($user->email); #按照当前用户邮箱查找sell
-        $sell = Sell::where('user_email',$user_email)->get(); #按照当前用户邮箱查找sell
-        $buy = Buy::where('user_email',$user_email)->get();#按照当前用户邮箱查找buy
+        $sell = Sell::where('user_email',$user_email)->orderBy('created_at','desc')->get(); #按照当前用户邮箱查找sell
+        $buy = Buy::where('user_email',$user_email)->orderBy('created_at','desc')->get();#按照当前用户邮箱查找buy
         return view('home',compact('sell','buy'));
     }
 

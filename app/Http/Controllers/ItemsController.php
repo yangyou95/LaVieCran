@@ -17,12 +17,12 @@ class ItemsController extends Controller
 
       // $sell = none
 
-      $Digital = Sell::where('category','Digital')->take(4)->get(); #按照类别查找并输出前四个
-      $Life = Sell::where('category','Life')->take(4)->get();
-      $Study = Sell::where('category','Study')->take(4)->get();
-      $Elec = Sell::where('category','Elec')->take(4)->get();
-      $Cosmetic = Sell::where('category','Cosmetic')->take(4)->get();
-      $Cusine = Sell::where('category','Cusine')->take(4)->get();
+      $Digital = Sell::where('category','Digital')->orderBy('created_at','desc')->take(4)->get(); #按照类别查找并输出前四个
+      $Life = Sell::where('category','Life')->orderBy('created_at','desc')->take(4)->get();
+      $Study = Sell::where('category','Study')->orderBy('created_at','desc')->take(4)->get();
+      $Elec = Sell::where('category','Elec')->orderBy('created_at','desc')->take(4)->get();
+      $Cosmetic = Sell::where('category','Cosmetic')->orderBy('created_at','desc')->take(4)->get();
+      $Cusine = Sell::where('category','Cusine')->orderBy('created_at','desc')->take(4)->get();
 
 
       return view('items',compact('Digital','Life','Study','Elec','Cosmetic','Cusine'));
@@ -40,7 +40,7 @@ class ItemsController extends Controller
 
     public function showCategory($category)
     {
-      $sells = sell::where('category',$category)->get();
+      $sells = sell::where('category',$category)->orderBy('created_at','desc')->get();
 
       return view('subpages/sellCategory',compact('sells'));
     }
