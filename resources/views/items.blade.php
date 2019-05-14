@@ -13,6 +13,7 @@
 
 
 
+
         <!-- Styles -->
         <style>
             html, body {
@@ -76,11 +77,11 @@
               text-align: center;
             }
 
-            .navbar-brand{margin-left:50px;border: 1px solid #fff;width: 100px;height: 40px;text-align: center;}
+            /* .navbar-brand{margin-left:50px;border: 1px solid #fff;width: 100px;height: 40px;text-align: center;}
                 ul{margin-left:50px;}
                 ul li a{margin-right: 40px;color: #fff !important;}
                 .navbar-toggler-icon{color:#fff !important;}
-                .navbar-dark .navbar-toggler{border-color: white !important;}
+                .navbar-dark .navbar-toggler{border-color: white !important;} */
 
 
 
@@ -89,12 +90,21 @@
     <body>
         <div class="flex-center position-ref full-height ">
 
-          <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+          <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+
+              @include('navbar_header')
+
+          </nav>
+
+          <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark">
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <!-- 方框里面三条线 -->
+
+
 			<span class="navbar-toggler-icon"></span>
-		</button>
-          @if (Route::has('login'))
+		</button> -->
+
+          <!-- @if (Route::has('login'))
               <div class="collapse navbar-collapse navbar-right is-collapse top-right links" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   @auth
@@ -109,13 +119,13 @@
                   </li>
                   <li class="nav-item">
 					             <a class="nav-link" href="{{ url('/home') }}">用户中心</a>
-                  </li>
+                  </li> -->
 
                   <!-- <a href="{{ url('/') }}">首页</a>
                   <a href="{{ url('/items') }}">二手物品</a>
                   <a href="{{ url('/buy') }}">求购信息</a>
                       <a href="{{ url('/home') }}">用户中心</a> -->
-                  @else
+                  <!-- @else
                   <li class="nav-item">
                        <a class="nav-link" href="{{ url('/') }}">首页</a>
                   </li>
@@ -130,18 +140,23 @@
                   </li>
                   <li class="nav-item">
                        <a class="nav-link" href="{{ route('register') }}">注册</a>
-                  </li>
+                  </li> -->
 
                   <!-- <a href="{{ url('/') }}">首页</a>
                   <a href="{{ url('/items') }}">二手物品</a>
                   <a href="{{ url('/buy') }}">求购信息</a>
                       <a href="{{ route('login') }}">登录</a>
                       <a href="{{ route('register') }}">注册</a> -->
-                  @endauth
+                  <!-- @endauth
                 </ul>
               </div>
           @endif
-        </nav>
+        </nav> -->
+
+
+
+
+
             <div class="content">
 
               <div>
