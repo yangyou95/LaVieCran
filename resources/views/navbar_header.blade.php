@@ -22,7 +22,7 @@
 
 
 
-    <ul class="nav navbar-top-links navbar-right">
+    <ul class="nav navbar-top-links navbar-right collapse">
 
         <li class="dropdown">
 
