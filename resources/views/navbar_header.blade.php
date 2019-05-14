@@ -22,7 +22,7 @@
 
 
 
-      <ul class="nav navbar-top-links navbar-right collapse" id="navbar-top">
+      <ul class="nav navbar-collapse navbar-top-links navbar-right collapse " id="navbar-top">
 
     <li class="nav-item">
         <a href="/items">
