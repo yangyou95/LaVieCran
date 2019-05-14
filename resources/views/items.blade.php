@@ -73,7 +73,13 @@
               text-align: center;
             }
 
+            .navbar-brand{margin-left:50px;border: 1px solid #fff;width: 100px;height: 40px;text-align: center;}
+                ul{margin-left:50px;}
+                ul li a{margin-right: 40px;color: #fff !important;}
+                .navbar-toggler-icon{color:#fff !important;}
+                .navbar-dark .navbar-toggler{border-color: white !important;}
 
+  
 
         </style>
     </head>
