@@ -45,7 +45,7 @@
             }
 
             .content {
-                text-align: center;
+                /* text-align: center; */
                 margin-top: 30px;
 
             }
@@ -70,9 +70,8 @@
                 font-size: 35px;
             }
             .row{
-              text-align: center;
             }
-          img{
+          .image_resize{
             text-align: center;
           }
 
@@ -81,7 +80,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <!-- <div class="flex-center position-ref full-height"> -->
 
           @if (Route::has('login'))
               <div class="top-right links">
@@ -108,12 +107,12 @@
               </div>
 
      <div class="links">
-                  <div class="row">
+                    <div class="row">
                     <div class="image_resize col-xs-9">
-                    <img src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-width: 1200px;";>
+                    <img class="col-xs-9" src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-width: 1200px;";>
                    </div>
-                 </div>
-            </div>
+                   </div>
+
 
 
        <div class="title">
@@ -123,10 +122,16 @@
          <h3>联系方式：{{$Itemdetail->contact}}</h3>
        </div>
 
+
+
           </div>
 
 
         </div>
+
+      </div>
+
+      <!-- </div> -->
 
 
 

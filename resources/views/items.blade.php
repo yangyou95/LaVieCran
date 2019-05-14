@@ -79,13 +79,7 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            <!-- <div class="top-left links">
-              <a href="{{ url('/') }}">首页</a>
-              <a href="{{ url('/home') }}">二手物品</a>
-              <a href="{{ url('/home') }}">求购信息</a>
-
-            </div> -->
-
+        
           @if (Route::has('login'))
               <div class="top-right links">
                   @auth
