@@ -79,9 +79,12 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height ">
-
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <!-- 方框里面三条线 -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
           @if (Route::has('login'))
-              <div class="collapse navbar-collapse navbar-right is-collapse top-right links">
+              <div class="collapse navbar-collapse navbar-right is-collapse top-right links" id="collapsibleNavbar">
                   @auth
                   <a href="{{ url('/') }}">首页</a>
                   <a href="{{ url('/items') }}">二手物品</a>
