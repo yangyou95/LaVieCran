@@ -79,12 +79,14 @@
                 .navbar-toggler-icon{color:#fff !important;}
                 .navbar-dark .navbar-toggler{border-color: white !important;}
 
-  
+
 
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height ">
+
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark">
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <!-- 方框里面三条线 -->
 			<span class="navbar-toggler-icon"></span>
@@ -136,7 +138,7 @@
                 </ul>
               </div>
           @endif
-
+        </nav>
             <div class="content">
 
               <div>
