@@ -18,7 +18,7 @@
 
 <!-- /.navbar-header -->
 
-  <div class="collapse" id="navbar-collapse">
+  <div class="collapse navbar-collapse" id="navbar-collapse">
 
       <ul class="nav navbar-top-links navbar-right">
 
