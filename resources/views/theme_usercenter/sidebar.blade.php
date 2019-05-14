@@ -70,7 +70,7 @@
             </li>
             <li>
 
-                <a href="/itms"><i class="fa fa-edit fa-fw"></i> 查看所有出售物品</a>
+                <a href="/items"><i class="fa fa-edit fa-shop"></i> 查看所有出售物品</a>
 
             </li>
             <li>
