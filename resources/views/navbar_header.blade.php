@@ -24,7 +24,7 @@
 
     <ul class="nav navbar-top-links navbar-right">
 
-      <div>
+      <div class="collapse in">
 
         <li class="dropdown">
 
