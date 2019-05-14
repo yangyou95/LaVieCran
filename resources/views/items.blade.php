@@ -13,6 +13,21 @@
   <!-- Bootstrap Core CSS -->
 
   <link href="{!! asset('usercenter/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
+  <!-- MetisMenu CSS -->
+
+  <link href="{!! asset('usercenter/vendor/metisMenu/metisMenu.min.css') !!}" rel="stylesheet">
+
+
+
+  <!-- Custom CSS -->
+
+  <link href="{!! asset('usercenter/dist/css/sb-admin-2.css') !!}" rel="stylesheet">
+
+
+
+  <!-- Morris Charts CSS -->
+
+  <link href="{!! asset('usercenter/vendor/morrisjs/morris.css') !!}" rel="stylesheet">
 
 
   <!-- jQuery -->
