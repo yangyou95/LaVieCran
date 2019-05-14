@@ -24,25 +24,25 @@
 
       <ul class="nav navbar-collapse navbar-top-links navbar-right collapse " id="navbar-top">
 
-    <li class="nav-item">
+    <li>
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li class="nav-item">
+    <li>
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li class="nav-item">
+    <li>
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li class="nav-item">
+    <li>
         <a href="/items">
             二手物品
         </a>
