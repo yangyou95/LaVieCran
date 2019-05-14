@@ -20,7 +20,6 @@
 
   <div class="collapse" id="navbar-collapse">
 
-      <ul class="nav navbar-top-links navbar-right">
 
     <li>
         <a href="/items">
@@ -47,7 +46,4 @@
     </li>
 
 
-
-
-</ul>
 </div>
