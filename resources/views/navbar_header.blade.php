@@ -22,7 +22,9 @@
 
 
 
-    <ul class="nav navbar-top-links navbar-right collapse">
+    <ul class="nav navbar-top-links navbar-right">
+
+      <div class="collapse">
 
         <li class="dropdown">
 
@@ -190,5 +192,6 @@
 
 
         <!-- /.dropdown -->
+      </div>
 
     </ul>
