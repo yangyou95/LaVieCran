@@ -22,25 +22,25 @@
 
       <ul class="nav navbar-top-links navbar-right">
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
