@@ -15,7 +15,15 @@
   <link href="{!! asset('usercenter/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
 
 
+  <!-- jQuery -->
 
+  <script src="{!! asset('usercenter/vendor/jquery/jquery.min.js') !!}"></script>
+
+
+
+  <!-- Bootstrap Core JavaScript -->
+
+  <script src="{!! asset('usercenter/vendor/bootstrap/js/bootstrap.min.js') !!}"></script>
 
 
 
