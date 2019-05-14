@@ -1,6 +1,6 @@
 <div class="navbar-header">
 
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
 
         <span class="sr-only">Toggle navigation</span>
 
@@ -18,7 +18,7 @@
 
 <!-- /.navbar-header -->
 
-  <div class="collapse navbar-collapse" id="navbar-collapse">
+  <div class="collapse navbar-collapse" id="navbar-top">
 
       <ul class="nav navbar-top-links navbar-right">
 
