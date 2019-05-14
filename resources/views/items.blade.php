@@ -78,10 +78,10 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height collapse navbar-collapse navbar-right is-collapse">
+        <div class="flex-center position-ref full-height ">
 
           @if (Route::has('login'))
-              <div class="top-right links">
+              <div class="collapse navbar-collapse navbar-right is-collapse top-right links">
                   @auth
                   <a href="{{ url('/') }}">首页</a>
                   <a href="{{ url('/items') }}">二手物品</a>
