@@ -20,7 +20,7 @@
 
   <div class="collapse navbar-collapse" id="navbar-top">
 
-      <ul class="nav navbar-top-links navbar-right">
+      <ul class="navbar-nav">
 
     <li class="nav-item">
         <a href="/items">
