@@ -34,7 +34,7 @@
 
                 <a href="#">test
 
-                    <div>
+                    <!-- <div>
 
                         <strong>站内信系统</strong>
 
@@ -46,7 +46,7 @@
 
                     </div>
 
-                    <div>站内信系统。Yang正在建设中...</div>
+                    <div>站内信系统。Yang正在建设中...</div> -->
 
                 </a>
 
