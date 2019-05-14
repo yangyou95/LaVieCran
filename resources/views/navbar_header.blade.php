@@ -22,7 +22,7 @@
 
     <li class="dropdown">
 
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">test
 
             <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
 
@@ -30,27 +30,7 @@
 
         <ul class="dropdown-menu dropdown-messages">
 
-            <li>
 
-                <a href="#">test
-
-                    <!-- <div>
-
-                        <strong>站内信系统</strong>
-
-                        <span class="pull-right text-muted">
-
-                            <em>Yesterday</em>
-
-                        </span>
-
-                    </div>
-
-                    <div>站内信系统。Yang正在建设中...</div> -->
-
-                </a>
-
-            </li>
 
             <li class="divider"></li>
 
