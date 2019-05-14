@@ -18,9 +18,9 @@
 
 <!-- /.navbar-header -->
 
-  <div class="sidebar-nav navbar-collapse">
+  <div class="navbar-collapse">
 
-<ul class="nav navbar-top-links navbar-right">
+      <ul class="nav navbar-top-links navbar-right">
 
     <li class="dropdown">
 
@@ -37,7 +37,6 @@
     <li class="dropdown">
 
         <a class="dropdown-toggle" data-toggle="dropdown" href="/items">
-
 
             求购物品
         </a>
