@@ -1,6 +1,16 @@
 <div class="navbar-header">
 
-    <button type="button" class="navbar-toggle" data-toggle="collapse-1" data-target="#navbar-collapse"></button>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+
+        <span class="sr-only">Toggle navigation</span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+
+    </button>
 
     <a class="navbar-brand" href="/">LaVieCran(暂定名)</a>
 
@@ -8,14 +18,9 @@
 
 <!-- /.navbar-header -->
 
-  <div class="collapse-1" id="navbar-collapse">
+  <div class="collapse" id="navbar-collapse">
 
-
-    <li>
-        <a href="/items">
-            二手物品
-        </a>
-    </li>
+      <ul class="nav navbar-top-links navbar-right">
 
     <li>
         <a href="/items">
@@ -35,5 +40,14 @@
         </a>
     </li>
 
+    <li>
+        <a href="/items">
+            二手物品
+        </a>
+    </li>
 
+
+
+
+</ul>
 </div>
