@@ -1,6 +1,6 @@
 <div class="navbar-header">
 
-    <button type="button" class="navbar-toggle" data-toggle="collapse in" data-target="#navbar-top">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
 
         <span class="sr-only">Toggle navigation</span>
 
@@ -18,9 +18,8 @@
 
 <!-- /.navbar-header -->
 
-  <div class="collapse in navbar-collapse" id="navbar-top">
 
-      <ul class="nav">
+      <ul class="nav collapse in" id="navbar-top">
 
     <li class="nav-item">
         <a href="/items">
@@ -50,4 +49,3 @@
 
 
 </ul>
-</div>
