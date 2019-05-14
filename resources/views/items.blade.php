@@ -85,18 +85,49 @@
 		</button>
           @if (Route::has('login'))
               <div class="collapse navbar-collapse navbar-right is-collapse top-right links" id="collapsibleNavbar">
+                <ul class="navbar-nav">
                   @auth
-                  <a href="{{ url('/') }}">首页</a>
+                  <li class="nav-item">
+					             <a class="nav-link" href="{{ url('/') }}">首页</a>
+                  </li>
+                  <li class="nav-item">
+					             <a class="nav-link" href="{{ url('/items') }}">二手物品</a>
+                  </li>
+                  <li class="nav-item">
+					             <a class="nav-link" href="{{ url('/buy') }}">求购信息</a>
+                  </li>
+                  <li class="nav-item">
+					             <a class="nav-link" href="{{ url('/home') }}">用户中心</a>
+                  </li>
+
+                  <!-- <a href="{{ url('/') }}">首页</a>
                   <a href="{{ url('/items') }}">二手物品</a>
                   <a href="{{ url('/buy') }}">求购信息</a>
-                      <a href="{{ url('/home') }}">用户中心</a>
+                      <a href="{{ url('/home') }}">用户中心</a> -->
                   @else
-                  <a href="{{ url('/') }}">首页</a>
+                  <li class="nav-item">
+                       <a class="nav-link" href="{{ url('/') }}">首页</a>
+                  </li>
+                  <li class="nav-item">
+                       <a class="nav-link" href="{{ url('/items') }}">二手物品</a>
+                  </li>
+                  <li class="nav-item">
+                       <a class="nav-link" href="{{ url('/buy') }}">求购信息</a>
+                  </li>
+                  <li class="nav-item">
+                       <a class="nav-link" href="{{ route('login') }}">登录</a>
+                  </li>
+                  <li class="nav-item">
+                       <a class="nav-link" href="{{ route('register') }}">注册</a>
+                  </li>
+
+                  <!-- <a href="{{ url('/') }}">首页</a>
                   <a href="{{ url('/items') }}">二手物品</a>
                   <a href="{{ url('/buy') }}">求购信息</a>
                       <a href="{{ route('login') }}">登录</a>
-                      <a href="{{ route('register') }}">注册</a>
+                      <a href="{{ route('register') }}">注册</a> -->
                   @endauth
+                </ul>
               </div>
           @endif
 
