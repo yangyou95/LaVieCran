@@ -68,7 +68,16 @@
                 <a href="#"><i class="fa fa-edit fa-fw"></i> 校内新闻(筹备建设中)</a>
 
             </li>
+            <li>
 
+                <a href="/itms"><i class="fa fa-edit fa-fw"></i> 查看所有出售物品</a>
+
+            </li>
+            <li>
+
+                <a href="/buy"><i class="fa fa-edit fa-fw"></i> 查看所有求购物品</a>
+
+            </li>
 
 
 
