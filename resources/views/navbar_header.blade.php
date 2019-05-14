@@ -22,10 +22,10 @@
 
     <li class="dropdown">
 
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">test
+        <a class="dropdown-toggle" data-toggle="dropdown" href="/items">
 
-            <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-
+            <i class="fas fa-shopping-basket"></i> <i class="fa fa-caret-down"></i>
+            二手物品
         </a>
 
         <ul class="dropdown-menu dropdown-messages">
