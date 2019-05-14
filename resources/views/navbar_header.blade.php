@@ -1,5 +1,3 @@
-
-
 <div class="navbar-header">
 
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
@@ -20,31 +18,36 @@
 
 <!-- /.navbar-header -->
 
+  <div class="collapse in navbar-collapse" id="navbar-top">
 
+      <ul class="nav">
 
-      <ul class="nav navbar-top-links navbar-right collapse in" id="navbar-top">
-
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
 
-    <li>
+    <li class="nav-item">
         <a href="/items">
             二手物品
         </a>
     </li>
+
+
+
+
 </ul>
+</div>
