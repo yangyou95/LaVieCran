@@ -16,28 +16,6 @@
 
 
 
-  <!-- MetisMenu CSS -->
-
-  <link href="{!! asset('usercenter/vendor/metisMenu/metisMenu.min.css') !!}" rel="stylesheet">
-
-
-
-  <!-- Custom CSS -->
-
-  <link href="{!! asset('usercenter/dist/css/sb-admin-2.css') !!}" rel="stylesheet">
-
-
-
-  <!-- Morris Charts CSS -->
-
-  <link href="{!! asset('usercenter/vendor/morrisjs/morris.css') !!}" rel="stylesheet">
-
-
-
-
-  <!-- Custom Fonts -->
-
-  <link href="{!! asset('usercenter/vendor/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet" type="text/css">
 
 
 
