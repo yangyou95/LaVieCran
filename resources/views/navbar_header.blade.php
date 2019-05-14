@@ -190,39 +190,6 @@
 
         <!-- /.dropdown -->
 
-        <li class="dropdown">
-
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-
-                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-
-            </a>
-
-            <ul class="dropdown-menu dropdown-user">
-
-                <li><a href="/home"><i class="fa fa-user fa-fw"></i> 用户 {{ Auth::user()->name }} 资料</a>
-
-                </li>
-
-                <li><a href="/home/craninfo"><i class="fa fa-gear fa-fw"></i> 用户设置</a>
-
-                </li>
-
-                <li class="divider"></li>
-
-                <li><a href="{{ route('logout') }}"  onclick="event.preventDefault();
-                               document.getElementById('logout-form').submit();"> <i class="fa fa-sign-out fa-fw"></i> 注销</a>
-
-                </li>
-
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            </ul>
-
-            <!-- /.dropdown-user -->
-
-        </li>
 
         <!-- /.dropdown -->
 
