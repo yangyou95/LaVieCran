@@ -22,52 +22,30 @@
 
       <ul class="nav navbar-top-links navbar-right">
 
-    <li class="dropdown">
-
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/items">
-
-
+    <li>
+        <a href="/items">
             二手物品
         </a>
-
-        <!-- /.dropdown-messages -->
-
     </li>
 
-    <li class="dropdown">
-
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/items">
-
-            求购物品
-        </a>
-
-        <!-- /.dropdown-messages -->
-
-    </li>
-
-    <li class="dropdown">
-
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/items">
-
-
+    <li>
+        <a href="/items">
             二手物品
         </a>
-
-        <!-- /.dropdown-messages -->
-
     </li>
 
-    <li class="dropdown">
-
-        <a class="dropdown-toggle" data-toggle="dropdown" href="/items">
-
-
+    <li>
+        <a href="/items">
             二手物品
         </a>
-
-        <!-- /.dropdown-messages -->
-
     </li>
+
+    <li>
+        <a href="/items">
+            二手物品
+        </a>
+    </li>
+
 
 
 
