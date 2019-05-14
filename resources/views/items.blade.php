@@ -116,14 +116,17 @@
         </style>
     </head>
     <body>
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+
+          @include('navbar_header')
+
+      </nav>
+
+
         <div class="flex-center position-ref full-height ">
 
 
-          <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
-              @include('navbar_header')
-
-          </nav>
 
           <!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark">
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
