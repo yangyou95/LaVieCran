@@ -78,8 +78,8 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-        
+        <div class="flex-center position-ref full-height collapse navbar-collapse navbar-right is-collapse">
+
           @if (Route::has('login'))
               <div class="top-right links">
                   @auth
