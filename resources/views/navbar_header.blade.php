@@ -18,6 +18,8 @@
 
 <!-- /.navbar-header -->
 
+  <div class="sidebar-nav navbar-collapse">
+
 <ul class="nav navbar-top-links navbar-right">
 
     <li class="dropdown">
@@ -71,3 +73,4 @@
 
 
 </ul>
+</div>
