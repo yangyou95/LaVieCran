@@ -2,6 +2,7 @@
 
 <div class="navbar-header">
 
+    <nav class="nav navbar-top-links navbar-right">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
 
         <span class="sr-only">Toggle navigation</span>
@@ -52,5 +53,6 @@
 
 
 </ul>
+</nav>
 </div>
 </div>
