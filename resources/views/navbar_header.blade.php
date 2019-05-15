@@ -19,7 +19,7 @@
 <!-- /.navbar-header -->
 
 
-      <ul class="nav collapse in" id="navbar-top">
+      <ul class="nav navbar-right collapse in" id="navbar-top">
 
     <li>
         <a href="/items">
@@ -35,22 +35,23 @@
   @if (Route::has('login'))
     @auth
     <li>
-        <a href="{{ route('login') }}">
-            登录
-        </a>
+      <a href="{{ url('/home') }}">
+          用户中心
+      </a>
     </li>
 
-    <li>
-        <a href="{ route('register') }}">
-            注册
-        </a>
-    </li>
  @else
-  <li>
-    <a href="{{ url('/home') }}">
-        登录
-    </a>
-  </li>
+ <li>
+     <a href="{{ route('login') }}">
+         登录
+     </a>
+ </li>
+
+ <li>
+     <a href="{ route('register') }}">
+         注册
+     </a>
+ </li>
  @endauth
 @endif
 
