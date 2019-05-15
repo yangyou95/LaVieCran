@@ -19,7 +19,7 @@
 <!-- /.navbar-header -->
 
 
-      <ul class="nav navbar-right collapse in" id="navbar-top">
+      <ul class="nav navbar-top-links navbar-right collapse in" id="navbar-top">
 
     <li>
         <a href="/items">
