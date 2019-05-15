@@ -10,6 +10,26 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
   <link href="{!! asset('usercenter/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
+
+  <!-- Bootstrap Core CSS -->
+
+  <link href="{!! asset('usercenter/vendor/bootstrap/css/bootstrap.min.css') !!}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+
+  <link href="{!! asset('usercenter/vendor/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet" type="text/css">
+
+
+
+  <!-- jQuery -->
+
+  <script src="{!! asset('usercenter/vendor/jquery/jquery.min.js') !!}"></script>
+
+
+
+  <!-- Bootstrap Core JavaScript -->
+
+  <script src="{!! asset('usercenter/vendor/bootstrap/js/bootstrap.min.js') !!}"></script>
         <!-- Styles -->
         <style>
             html, body {
