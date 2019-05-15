@@ -33,6 +33,7 @@
         </a>
     </li>
   @if (Route::has('login'))
+    @auth
     <li>
         <a href="{{ route('login') }}">
             登录
@@ -44,12 +45,14 @@
             注册
         </a>
     </li>
-@else
-<li>
+ @else
+  <li>
     <a href="{{ url('/home') }}">
         登录
     </a>
-</li>
+  </li>
+ @endauth
+@endif
 
 
 
