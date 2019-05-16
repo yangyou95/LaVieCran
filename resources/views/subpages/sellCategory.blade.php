@@ -113,7 +113,7 @@
                            <img src= "{{$d->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                           </div>
                           <div class="caption">
-                              <h3>{{$d->title}}</h3>
+                              <p>{{$d->title}}</p>
                               <p>{{$d->description}}</p>
                               <p><small class="text-muted">{{$d->created_at}}</small></p>
                               <p>
