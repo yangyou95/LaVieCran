@@ -107,8 +107,11 @@
                 font-size: 35px;
             }
 
-          img{
-            text-align: center;
+            .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
           }
 
 
@@ -132,10 +135,10 @@
               </div>
 
      <div class="links">
-                    <div class="row" style="text-align: center">
-                    <div style="text-align: center">
-                    <img class="col-xs-9" src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-height: 300px;max-width: 300px;";>
-                   </div>
+                    <div class="row">
+
+                    <img class="col-xs-9 center" src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-height: 300px;max-width: 300px;";>
+
                    </div>
 
 
