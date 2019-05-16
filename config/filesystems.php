@@ -59,7 +59,7 @@ return [
             'driver' => 's3',
             'key' => 'AKIAJWNMKEI4L2D3CW5Q',
             'secret' => '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',
-            'region' => "eu-east-1",
+            'region' => "eu-west-2",
             'bucket' => 'yangprojectofcranfield',
             'url' => env('https://eu-west-2.amazonaws.com/yangprojectofcranfield '),
         ],
