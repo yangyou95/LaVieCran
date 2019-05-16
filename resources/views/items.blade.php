@@ -114,7 +114,7 @@
             .row{
               text-align: center;
             }
-            .flex{
+            .flex >p{
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
