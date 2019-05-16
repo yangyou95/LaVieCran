@@ -116,10 +116,10 @@
 
 
        <div class="title">
-         <h3>物品名称：{{$Itemdetail->title}}</h3>
-         <h3>物品描述：{{$Itemdetail->description}}</h3>
-         <h3>物品价格：{{$Itemdetail->price}}</h3>
-         <h3>联系方式：{{$Itemdetail->contact}}</h3>
+         <h6>物品名称：{{$Itemdetail->title}}</h6>
+         <h6>物品描述：{{$Itemdetail->description}}</h6>
+         <h6>物品价格：{{$Itemdetail->price}}</h6>
+         <h6>联系方式：{{$Itemdetail->contact}}</h6>
        </div>
 
 

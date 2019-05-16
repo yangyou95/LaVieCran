@@ -256,7 +256,7 @@
                        <img src= "{{$e->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                       </div>
                       <div class="caption">
-                          <h3>{{$e->title}}</h3>
+                          <p>{{$e->title}}</p>
                           <p>{{$e->price}}</p>
                           <p><small class="text-muted">{{$e->created_at}}</small></p>
 
@@ -294,7 +294,7 @@
                    <img src= "{{$l->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                   </div>
                   <div class="caption">
-                      <h3>{{$l->title}}</h3>
+                      <p>{{$l->title}}</p>
                       <p>{{$l->price}}</p>
                       <p><small class="text-muted">{{$l->created_at}}</small></p>
 
@@ -332,7 +332,7 @@
                <img src= "{{$c->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
               </div>
               <div class="caption">
-                  <h3>{{$c->title}}</h3>
+                  <p>{{$c->title}}</p>
                   <p>{{$c->price}}</p>
                   <p><small class="text-muted">{{$c->created_at}}</small></p>
 
@@ -369,7 +369,7 @@
              <img src= "{{$s->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
             </div>
             <div class="caption">
-                <h3>{{$s->title}}</h3>
+                <p>{{$s->title}}</p>
                 <p>{{$s->price}}</p>
                 <p><small class="text-muted">{{$s->created_at}}</small></p>
 
@@ -407,7 +407,7 @@
              <img src= "{{$cu->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
             </div>
             <div class="caption">
-                <h3>{{$cu->title}}</h3>
+                <p>{{$cu->title}}</p>
                 <p>{{$cu->price}}</p>
                 <p><small class="text-muted">{{$cu->created_at}}</small></p>
 
