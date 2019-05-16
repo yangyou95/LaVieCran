@@ -137,7 +137,7 @@
      <div class="links">
                     <div class="row">
 
-                    <img class="col-xs-9 center" src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-height: 300px;max-width: 300px;";>
+                    <img class="center" src= "{{$Itemdetail->path}}" alt="180x100%" style="height: auto;width: auto;max-height: 300px;max-width: 300px;";>
 
                    </div>
 
