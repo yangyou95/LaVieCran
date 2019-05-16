@@ -216,7 +216,7 @@
                            <img src= "{{$d->path}}" alt="180x100%" style="height: 120px ;width: 100%;display: block";>
                           </div>
                           <div class="caption">
-                              <h3>{{$d->title}}</h3>
+                              <h5>{{$d->title}}</h5>
                               <p>{{$d->price}}</p>
                               <p><small class="text-muted">{{$d->created_at}}</small></p>
 
