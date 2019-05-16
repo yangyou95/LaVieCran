@@ -221,7 +221,9 @@
                            <img src= "{{$d->path}}" alt="180x100%" style="height: 120px ;width: 100%;display: block";>
                           </div>
                           <div class="caption">
+                            <div class="flex">
                               <p>{{$d->title}}</p>
+                            </div>
                               <p>{{$d->price}}</p>
                               <p><small class="text-muted">{{$d->created_at}}</small></p>
 
@@ -260,8 +262,10 @@
                        <div class="image_resize">
                        <img src= "{{$e->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                       </div>
-                      <div class="caption flex">
+                      <div class="caption">
+                        <div class="flex">
                           <p>{{$e->title}}</p>
+                        </div>
                           <p>{{$e->price}}</p>
                           <p><small class="text-muted">{{$e->created_at}}</small></p>
 
@@ -299,7 +303,9 @@
                    <img src= "{{$l->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                   </div>
                   <div class="caption">
+                    <div class="flex">
                       <p>{{$l->title}}</p>
+                    </div>
                       <p>{{$l->price}}</p>
                       <p><small class="text-muted">{{$l->created_at}}</small></p>
 
@@ -337,7 +343,9 @@
                <img src= "{{$c->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
               </div>
               <div class="caption">
-                  <p>{{$c->title}}</p>
+                    <div class="flex">
+                      <p>{{$c->title}}</p>
+                    </div>
                   <p>{{$c->price}}</p>
                   <p><small class="text-muted">{{$c->created_at}}</small></p>
 
@@ -374,7 +382,9 @@
              <img src= "{{$s->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
             </div>
             <div class="caption">
+              <div class="flex">
                 <p>{{$s->title}}</p>
+              </div>
                 <p>{{$s->price}}</p>
                 <p><small class="text-muted">{{$s->created_at}}</small></p>
 
@@ -412,7 +422,9 @@
              <img src= "{{$cu->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
             </div>
             <div class="caption">
+              <div class="flex">
                 <p>{{$cu->title}}</p>
+              </div>
                 <p>{{$cu->price}}</p>
                 <p><small class="text-muted">{{$cu->created_at}}</small></p>
 
