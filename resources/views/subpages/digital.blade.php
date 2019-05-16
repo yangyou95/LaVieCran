@@ -107,7 +107,7 @@
                            <img src= "storage/upload/{{$d->image_name}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                           </div>
                           <div class="caption">
-                              <h3>{{$d->title}}</h3>
+                              <p>{{$d->title}}</p>
                               <p>{{$d->description}}</p>
                               <p>
                                   <a href="#" class="btn btn-primary" role="button">
