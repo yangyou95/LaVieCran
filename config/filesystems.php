@@ -57,9 +57,9 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => 'AKIAJFNU5QTGUA7XFB7A',
-            'secret' => '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',
-            'region' => "eu-west-2",
+            'key' => 'AKIAJWNMKEI4L2D3CW5Q',
+            'secret' => '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',
+            'region' => "eu-east-1",
             'bucket' => 'yangprojectofcranfield',
             'url' => env('https://eu-west-2.amazonaws.com/yangprojectofcranfield '),
         ],
