@@ -126,8 +126,8 @@
               </div>
 
      <div class="links">
-       <div class="row">
-         <table class="table table-bordered table-responsive" style="height: auto;width: automargin-top: 10px">
+       <div class="row" style="height: auto;width: auto;">
+         <table class="table table-bordered table-responsive" style="margin-top: 10px">
            <thead>
              <tr>
                <th> 物品名称 </th>
