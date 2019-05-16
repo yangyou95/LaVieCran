@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('联系方式') }}</label>
+                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('联系方式(微信号或者电话)') }}</label>
 
                             <div class="col-md-6">
                                 <input id="contact" type="text" class="form-control{{ $errors->has('contact') ? ' is-invalid' : '' }}" name="contact" value="{{ old('contact') }}" placeholder="用于物品出售与购买时显示，可在用户中心更改" required autofocus>

@@ -114,6 +114,11 @@
             .row{
               text-align: center;
             }
+            .flex{
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
 
             /* .navbar-brand{margin-left:50px;border: 1px solid #fff;width: 100px;height: 40px;text-align: center;}
                 ul{margin-left:50px;}
@@ -255,7 +260,7 @@
                        <div class="image_resize">
                        <img src= "{{$e->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                       </div>
-                      <div class="caption">
+                      <div class="caption flex">
                           <p>{{$e->title}}</p>
                           <p>{{$e->price}}</p>
                           <p><small class="text-muted">{{$e->created_at}}</small></p>
