@@ -106,9 +106,8 @@
                 margin-bottom: 30px;
                 font-size: 35px;
             }
-            .row{
-            }
-          .image_resize{
+
+          img{
             text-align: center;
           }
 
