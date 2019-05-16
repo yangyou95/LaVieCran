@@ -96,7 +96,6 @@
                 <div class="row ">
 
                        <span class="col-xs-12 col-sm-12 links" ><a href="items" >二手物品(开放测试)</a></span>
-                       <span class="col-xs-12 col-sm-4 links" ><a href="#" >新闻资讯(筹备中)</a></span>
                      <span class="col-xs-12 col-sm-4 links" >  <a href="/home/developer">开发者</a></span>
 
                  </div>
