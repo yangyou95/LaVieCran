@@ -103,8 +103,8 @@
             }
 
             .m-b-md {
-                margin-bottom: 10px;
-                font-size: 15px;
+                margin-bottom: 30px;
+                font-size: 35px;
             }
             .row{
               text-align: center;
@@ -115,17 +115,27 @@
               text-overflow: ellipsis;
             }
 
-
         </style>
     </head>
     <body>
-      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-
-          @include('navbar_header')
-
-      </nav>
         <div class="flex-center position-ref full-height">
 
+          @if (Route::has('login'))
+              <div class="top-right links">
+                  @auth
+                  <a href="{{ url('/') }}">首页</a>
+                  <a href="{{ url('/items') }}">二手物品</a>
+                  <a href="{{ url('/buy') }}">求购信息</a>
+                      <a href="{{ url('/home') }}">用户中心</a>
+                  @else
+                  <a href="{{ url('/') }}">首页</a>
+                  <a href="{{ url('/items') }}">二手物品</a>
+                  <a href="{{ url('/buy') }}">求购信息</a>
+                      <a href="{{ route('login') }}">登录</a>
+                      <a href="{{ route('register') }}">注册</a>
+                  @endauth
+              </div>
+          @endif
 
             <div class="content">
 
@@ -139,7 +149,7 @@
 
 
                   @foreach($sells as $d)
-                  <div class="col-xs-6 col-sm-6 col-md-3">
+                  <div class="col-sm-6 col-md-3">
                        <div class="thumbnail">
                            <div class="image_resize">
                            <img src= "{{$d->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
@@ -152,7 +162,7 @@
                               <p><small class="text-muted">{{$d->created_at}}</small></p>
 
                               <p>
-                                  <a href="items/category/{{$d->id}}" class="btn btn-primary" role="button">
+                                  <a href="category/{{$d->id}}" class="btn btn-primary" role="button">
                                       查看
                                   </a>
 
