@@ -89,8 +89,7 @@
                 </div>
 
                 <div class="links">
-                    <a>法国国立应用科学学院(Rouen)， 机械工程系工程师在读。
-                      科研兴趣：机器人，深度强化学习。目前在中国科学院自动化所，复杂系统与智能科学国家重点实验室从事深度强化学习算法实习。</a>
+                    <URL>yangyou95.github.io</URL>
                 </div>
 
                 <div class="title m-b-md">

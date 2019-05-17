@@ -149,7 +149,7 @@
 
 
                   @foreach($sells as $d)
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-xs-6 col-sm-6 col-md-3">
                        <div class="thumbnail">
                            <div class="image_resize">
                            <img src= "{{$d->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
