@@ -103,8 +103,8 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
-                font-size: 35px;
+                margin-bottom: 10px;
+                font-size: 15px;
             }
             .row{
               text-align: center;
