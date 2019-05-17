@@ -71,29 +71,23 @@
             .row{
               text-align: center;
             }
+            .flex >p{
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
 
 
         </style>
     </head>
     <body>
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+
+          @include('navbar_header')
+
+      </nav>
         <div class="flex-center position-ref full-height">
 
-          @if (Route::has('login'))
-              <div class="top-right links">
-                  @auth
-                  <a href="{{ url('/') }}">首页</a>
-                  <a href="{{ url('/items') }}">二手物品</a>
-                  <a href="{{ url('/buy') }}">求购信息</a>
-                      <a href="{{ url('/home') }}">用户中心</a>
-                  @else
-                  <a href="{{ url('/') }}">首页</a>
-                  <a href="{{ url('/items') }}">二手物品</a>
-                  <a href="{{ url('/buy') }}">求购信息</a>
-                      <a href="{{ route('login') }}">登录</a>
-                      <a href="{{ route('register') }}">注册</a>
-                  @endauth
-              </div>
-          @endif
 
             <div class="content">
 
@@ -113,11 +107,14 @@
                            <img src= "{{$d->path}}" alt="180x100%" style="height: 180px;width: 100%;display: block";>
                           </div>
                           <div class="caption">
+                            <div class="flex">
                               <p>{{$d->title}}</p>
-                              <p>{{$d->description}}</p>
+                            </div>
+                              <p>{{$d->price}}</p>
                               <p><small class="text-muted">{{$d->created_at}}</small></p>
+
                               <p>
-                                  <a href="category/{{$d->id}}" class="btn btn-primary" role="button">
+                                  <a href="items/category/{{$d->id}}" class="btn btn-primary" role="button">
                                       查看
                                   </a>
 
