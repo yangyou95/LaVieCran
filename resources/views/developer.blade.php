@@ -89,7 +89,8 @@
                 </div>
 
                 <div class="links">
-                    <URL>yangyou95.github.io</URL>
+
+                    <a href="https://yangyou95.github.io/"><URL>yangyou95.github.io</URL>
                 </div>
 
                 <div class="title m-b-md">
