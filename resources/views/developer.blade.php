@@ -90,7 +90,7 @@
 
                 <div class="links">
 
-                    <a href="https://yangyou95.github.io/"><URL>个人资料</URL>
+                    <a href="https://yangyou95.github.io/"><URL>点击查看个人资料</URL></a>
                 </div>
 
                 <div class="title m-b-md">
