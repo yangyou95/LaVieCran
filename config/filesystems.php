@@ -55,14 +55,6 @@ return [
             'visibility' => 'public',
         ],
 
-        's3' => [
-            'driver' => 's3',
-            'key' => 'AKIAJWNMKEI4L2D3CW5Q',
-            'secret' => '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',
-            'region' => "eu-west-2",
-            'bucket' => 'yangprojectofcranfield',
-            'url' => env('https://eu-west-2.amazonaws.com/yangprojectofcranfield '),
-        ],
         'admin' => [
       'driver'     => 'local',
       'root'       => public_path('upload'),
